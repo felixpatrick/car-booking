@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    color: #645353;
+
+}
+
+header {
+    display: grid;
+    height: 70px;
+    background-color: white;
+    justify-items: center;
+    border-bottom: .5px #F6F7F9 solid;
+
+}
+
+.left-nav-bar {
+
+    display: gird;
+}
+
+.logo {
+    color: #0A20E6;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.top-nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    border-bottom: .5px #F6F7F9 solid;
+}
+
+
+.mid-nav-bar a {
+
+    text-decoration: none;
+    color: #645353;
+    padding-inline: 20px;
+}
+
+.right-nav-bar  {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    grid-template-columns: 1fr;
+    text-decoration: none;
+    color: black;  
+}
+
+.right-nav-bar a {
+   
+    text-decoration: none;
+    color: #645353;
+    padding-inline: 20px;
+    
+   
+    
+}
+
+.profile-pix {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#drop-down {
+    padding-left: 10px;
+}
+
+.booking-container {
+    display: flex;
+    background: url(/images/header-background.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: white;
+    justify-content: center;
+    border-bottom: 1px #eaedf3 solid;
+    /* border: 1px solid red; */
+
+    
+    
+}
+
+.book-a-car-main-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    column-gap: 50px;
+    height: 350px;
+    width: 80%;
+    justify-items: center;
+    align-items: center;
+
+}
+.book-a-car-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-self: start;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.book-a-car-heading h2 {
+    padding-bottom: 20px;
+    color: black;
+    font-size: 32px;
+}
+.book-a-car-text p span  {
+    display: block;
+    padding-top: 10px;
+    line-height: 2 ;
+}
+
+.book-a-car-l-bottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+}
+.users-count {
+    display: flex;
+}
+
+.users-count li {
+    list-style: none;
+    margin-inline: -4px;
+}
+
+.trust-rating-text {
+    font-size: 10pt;
+}
+
+.book-a-car-right-container {
+    height: 250px;
+    border-radius: 15px;
+    display: grid;
+    justify-self: end;
+    
+}
+
+.book-a-car-right {
+    border: .1px solid  #b6a2a238;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    padding: 20px;
+    width: 745px;
+}
+
+select {
+    padding-left: 10px;
+}
+.pickup {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;    
+}
+
+
+.dropoff {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+   
+}
+
+.pickup-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.dropoff-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#dropoff, #pickup {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 5px;
+    appearance: none;
+    margin: 5px ;
+    height: 40px;
+    width: 90%;
+
+}
+
+#dropoff::-webkit-calendar-picker-indicator {
+    background-color: red;
+    position: relative;
+    background: url(/images/chevron-down.png);
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+
+.time-picker {
+    padding: 20px;
+    background-color: red;
+}
+
+.label-text {
+    margin: 5px;
+    color: black;
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+#date {
+    background-color: red;
+    width: 100%;
+}
+
+.booking-platform-container {
+    background-color: #F5F6F8;
+    height: 800px;
+    justify-items: center;
+    align-content: center;   
+
+}
+
+
+.booking-filter {
+    background-color: white;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;    
+}
+.recommend {
+    display: block;
+    color: black;
+    font-weight: 600;
+}
+
+.booking-filter h2 {
+    color: black;
+
+    font-size: 12pt;
+    justify-content: start;
+    align-items: start;
+    border-bottom: 1px solid #ecedee;
+    padding-bottom: 10px;
+    width: 50%;
+
+}
+
+.booking-filter p {
+    font-size: 11pt;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 10px;
+
+}
+
+.car-filter-check {
+    display: block;
+    padding: 10px;
+}
+
+.car-list {
+    background-color: white;
+    width: 280px;
+    height: 300px;
+    display: grid;
+    padding: 20px;
+    border-radius: 10px;
+    column-gap: 10px;
+}
+
+.booking-car-list {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 80%;
+    gap: 20px;
+    align-content: center;
+    /* border: 1px solid ; */
+
+}
+
+
+.car-booking-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    /* gap: 30px; */
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.vehicle-model {
+    display: block;
+    
+}
+.car-name {
+   display: flex;  
+   justify-content: space-between;
+   color: #000000d2;
+   font-weight: 600;
+}
+
+.vehicle {
+    align-content: center;
+    justify-self: center;
+}
+
+.vechicle-details {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.no-passangers {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
+}
+
+.car-rent-price {
+    color: #000000d2;
+    font-weight: 600;
+}
+.car-rent-duration {
+    font-weight: 400;
+}
+
+
+.car-engine-type {
+    display: flex;
+    gap: 10px;
+    
+}
+
+footer {
+    height: 100px;
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    margin-top: 40px;
+    font-family: Montserrat;
+}
+
+.footer-container {
+    color: white;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    justify-items: space-between;
+    /* align-content: center; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.social-icons {
+    padding-block: 20px;
+}
+
+.social-icons a,
+.footer-nav-bar a,
+.top-nav-link a  {
+    padding-right: 10px;
+    color: #645353;
+    text-decoration: none;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.footer-logo {
+    padding-block: 20px;
+    width: 100%;
+    color: #0A20E6;
+    font-weight: bold;
+    font-family: Montserrat;
+    font-size: 30px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Mono&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-nav-bar">
+      <div class="left-nav-bar">
+        <h1 class="logo">Twilight</h1>
+      </div>
+      <div class="mid-nav-bar">
+        <a href="#">Booking</a>
+        <a href="#">About us</a>
+        <a href="#">Support</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+      <div class="right-nav-bar">
+        <a class="faovurites" href="#"><img src="images/favourite-icon.png" alt="favourites" /></a>
+        <a class="faovurites" href="#"><img src="images/options-icon.png" alt="options" /></a>
+        <a class="faovurites" href="#"><img src="images/settings-icon.png" alt="profile-pix" /></a>
+        <a class="profile-pix" href="#"><img src="images/profile-pix.png" alt="profile-pix" />
+          <span id="drop-down">
+            <img src="images/chevron-down.png" alt="" /></span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="booking-container">
+    <div class="book-a-car-main-container">
+      <section class="book-a-carzz-left">
+        <div class="book-a-car-l-top">
+          <div class="book-a-car-heading">
+            <h2>Book car in easy steps</h2>
+          </div>
+          <div class="book-a-car-text">
+            <p>
+              Renting a car brings you freedom, we'll help
+              <span>you find the best car for you at a great price.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="book-a-car-l-bottom">
+          <div class="users-count">
+            <li>
+              <img src="images/profile-pix-2.png" alt="user-count-1" />
+            </li>
+            <li>
+              <img src="images/profile-pix-3.png" alt="user-count-2" />
+            </li>
+            <li>
+              <img src="images/profile-pix-2.png" alt="user-count-3" />
+            </li>
+            <li>
+              <img src="images/2k.png" alt="user-count-3" />
+            </li>
+          </div>
+          <div class="trust-ratings">
+            <img src="images/stars.png" alt="star-ratings" />
+            <p class="trust-rating-text">Trusted by 10 million customers</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-a-car-right-container">
+        <section class="book-a-car-right">
+          <div class="pickup">
+            <div class="pick-up-top">
+              <label for="pickup"><img src="images/location-icon.png" alt="" /><span class="label-text">Pick-up</span>
+                <select name="pickup" id="pickup">
+                  <option value=""></option>
+                  <option value="Lagos">Lagos</option>
+                  <option value="Ibadan">Ibadan</option>
+                  <option value="Abuja">Abuja</option>
+                </select></label>
+            </div>
+            <div class="pickup-bottom">
+              <div class="pickup-date">
+                <label for="pickup-date"><img src="images/date-icon.png" alt="pickupdate-icon" /><span
+                    class="label-text"> Pick-up Date </span></label>
+                <input type="date" id="dropoff" class="time-picker" value="2024-11-30" />
+              </div>
+              <div class="dropoff-date">
+                <label for="dropoff"><img src="images/date-icon.png" alt="pickupdate-icon" />
+                  <span class="label-text">Drop-off Date</span></label>
+                <input type="date" id="dropoff" class="time-picker" value="2024-1-30" />
+              </div>
+            </div>
+          </div>
+
+          <div class="dropoff">
+            <div class="dropoff-top">
+              <label for="dropoff"><img src="images/location-icon.png" alt="" /><span
+                  class="label-text">Drop-off</span><select name="dropoff" id="dropoff">
+                  <option value=""></option>
+                  <option value="Lagos">Lagos</option>
+                  <option value="Ibadan">Ibadan</option>
+                  <option value="Abuja">Abuja</option>
+                </select></label>
+            </div>
+            <div class="dropoff-bottom">
+              <div class="pickup-time">
+                <label for="time"><img src="images/time-icon.png" alt="dropoff-time icon" />
+                  <span class="label-text">Pick-up Time</span></label>
+                <input type="time" id="dropoff" class="time-picker" />
+              </div>
+
+              <div class="dropoff-time">
+                <label for="time"><img src="images/time-icon.png" alt="dropoff-time icon" />
+                  <span class="label-text">Drop-off Time</span></label>
+                <input type="time" id="dropoff" class="time-picker" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </section>
+
+  <section class="booking-platform-container">
+    <div class="booking-platform"></div>
+    <section class="booking-car-list">
+      <section class="booking-filter">
+        <h2 class="filter-header">Filtered By</h2>
+        <div class="car-type">
+          <p>Car Type</p>
+          <label for="coupe" class="car-filter-check">
+            <input type="checkbox" name="Coupe" id="coupe" checked />
+
+            Coupe (24)
+          </label>
+          <label for="hatchback" class="car-filter-check">
+            <input type="checkbox" name="hatchback" id="hatchback" checked />
+
+            Hatchback (12)
+          </label>
+          <label for="sedan" class="car-filter-check">
+            <input type="checkbox" name="sedan" id="sedan" checked />
+
+            Sedan (16)
+          </label>
+          <label for="mpv" class="car-filter-check">
+            <input type="checkbox" name="mpv" id="mpv" />
+
+            MPV (28)
+          </label>
+          <label for="suv" class="car-filter-check">
+            <input type="checkbox" name="suv" id="suv" />
+
+            SUV (28)
+          </label>
+        </div>
+
+        <div class="capacity">
+          <p>Capacity</p>
+          <label for="capacity-1" class="car-filter-check">
+            <input type="checkbox" name="capacity-1" id="capacity-1" checked />
+
+            2 - 5 (100)
+          </label>
+          <label for="capacity-2" class="car-filter-check">
+            <input type="checkbox" name="capacity-2" id="capacity-2" checked />
+
+            6 or more (4)
+          </label>
+        </div>
+        <div class="customer-recommendation">
+          <p>Customer<span class="recommend"> Recommendation</span></p>
+          <label for="cs-recommendation-1" class="car-filter-check">
+            <input type="checkbox" name="cs-recommendation-1" id="cs-recommendation-1" checked />
+
+            2 - 5 (100)
+          </label>
+          <label for="cs-recommendation-2" class="car-filter-check">
+            <input type="checkbox" name="cs-recommendation-2" id="cs-recommendation-2" checked />
+
+            6 or more (4)
+          </label>
+        </div>
+      </section>
+      <section class="car-booking-section">
+        <div class="car-list">
+          <div class="car-for-rent">
+            <div class="car-name">
+              Porche 718 Cayman
+              <div class="favourite-car">
+                <img src="images/heart-rounded.png" alt="favourite-car-icon
+                                   " Coupe />
+              </div>
+            </div>
+            <div class="vehicle-model">Coupe</div>
+          </div>
+          <div class="vehicle">
+            <img src="images/porche.png" alt="porsche-718" />
+          </div>
+          <div class="vechicle-details">
+            <div class="no-passangers">
+              <div class="no-passager-icon">
+                <img src="images/user-02.png" alt="no-passager-icn" />
+              </div>
+              <p class="no-of-passangers">2</p>
+            </div>
+            <div class="car-engine-details">
+              <div class="car-engine-type">
+                <div class="car-engine-type-icon">
+                  <img src="images/gear.png" alt="car-engine-type-icon" />
+                </div>
+                <div class="car-engine-type-select">Manual</div>
+              </div>
+            </div>
+            <div class="car-rent-price-details">
+              <p class="car-rent-price">
+                $7,905 <span class="car-rent-duration">/d</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="car-list">
+            <div class="car-for-rent">
+              <div class="car-name">
+                Mini Cooper 5-Doors
+                <div class="favourite-car">
+                  <img
+                    src="images/heart-rounded-unchecked.png"
+                    alt="favourite-car-icon
+                                   "
+                    Coupe
+                  />
+                </div>
+              </div>
+              <div class="vehicle-model">Hatchback</div>
+            </div>
+            <div class="vehicle">
+              <img src="images/mini-cooper.png" alt="porsche-718" />
+            </div>
+            <div class="vechicle-details">
+              <div class="no-passangers">
+                <div class="no-passager-icon">
+                  <img src="images/user-02.png" alt="no-passager-icn" />
+                </div>
+                <p class="no-of-passangers">2</p>
+              </div>
+              <div class="car-engine-details">
+                <div class="car-engine-type">
+                  <div class="car-engine-type-icon">
+                    <img src="images/gear.png" alt="car-engine-type-icon" />
+                  </div>
+                  <div class="car-engine-type-select">Automatic</div>
+                </div>
+              </div>
+              <div class="car-rent-price-details">
+                <p class="car-rent-price">
+                  $6,905 <span class="car-rent-duration">/d</span>
+                </p>
+              </div>
+            </div>
+          </div> -->
+        <!-- <div class="car-list">
+            <div class="car-for-rent">
+              <div class="car-name">
+                Toyota GR Supra
+                <div class="favourite-car">
+                  <img
+                    src="images/heart-rounded-unchecked.png"
+                    alt="favourite-car-icon"
+                  />
+                </div>
+              </div>
+              <div class="vehicle-model">Toyota</div>
+            </div>
+            <div class="vehicle">
+              <img src="images/2020-Toyota-GR 1 (2).png" alt="toyota-gr" />
+            </div>
+            <div class="vechicle-details">
+              <div class="no-passangers">
+                <div class="no-passager-icon">
+                  <img src="images/user-02.png" alt="no-passager-icn" />
+                </div>
+                <p class="no-of-passangers">3</p>
+              </div>
+              <div class="car-engine-details">
+                <div class="car-engine-type">
+                  <div class="car-engine-type-icon">
+                    <img src="images/gear.png" alt="car-engine-type-icon" />
+                  </div>
+                  <div class="car-engine-type-select">Manual</div>
+                </div>
+              </div>
+              <div class="car-rent-price-details">
+                <p class="car-rent-price">
+                  $405 <span class="car-rent-duration">/d</span>
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+        <div class="car-list">
+          <div class="car-for-rent">
+            <div class="car-name">
+              Porche Taycan 45
+              <div class="favourite-car">
+                <img src="images/heart-rounded-unchecked.png" alt="favourite-car-icon
+                                   " Coupe />
+              </div>
+            </div>
+            <div class="vehicle-model">Taycan</div>
+          </div>
+          <div class="vehicle">
+            <img src="images/porche-tycan.png" alt="porsche-tycan" />
+          </div>
+          <div class="vechicle-details">
+            <div class="no-passangers">
+              <div class="no-passager-icon">
+                <img src="images/user-02.png" alt="no-passager-icn" />
+              </div>
+              <p class="no-of-passangers">5</p>
+            </div>
+            <div class="car-engine-details">
+              <div class="car-engine-type">
+                <div class="car-engine-type-icon">
+                  <img src="images/gear.png" alt="car-engine-type-icon" />
+                </div>
+                <div class="car-engine-type-select">Manual</div>
+              </div>
+            </div>
+            <div class="car-rent-price-details">
+              <p class="car-rent-price">
+                $5,405 <span class="car-rent-duration">/d</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="car-list">
+          <div class="car-for-rent">
+            <div class="car-name">
+              Toyota GR Supra
+              <div class="favourite-car">
+                <img src="images/heart-rounded-unchecked.png" alt="favourite-car-icon
+                    " />
+              </div>
+            </div>
+            <div class="vehicle-model">Toyota</div>
+          </div>
+          <div class="vehicle">
+            <img src="images/2020-Toyota-GR 1 (2).png" alt="toyota" />
+          </div>
+          <div class="vechicle-details">
+            <div class="no-passangers">
+              <div class="no-passager-icon">
+                <img src="images/user-02.png" alt="no-passager-icn" />
+              </div>
+              <p class="no-of-passangers">4</p>
+            </div>
+            <div class="car-engine-details">
+              <div class="car-engine-type">
+                <div class="car-engine-type-icon">
+                  <img src="images/gear.png" alt="car-engine-type-icon" />
+                </div>
+                <div class="car-engine-type-select">Manual</div>
+              </div>
+            </div>
+            <div class="car-rent-price-details">
+              <p class="car-rent-price">
+                $499 <span class="car-rent-duration">/d</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="car-list">
+          <div class="car-for-rent">
+            <div class="car-name">
+              Porche 718 Cayman
+              <div class="favourite-car">
+                <img src="images/heart-rounded-unchecked.png" alt="favourite-car-icon
+                                   " Coupe />
+              </div>
+            </div>
+            <div class="vehicle-model">Coupe</div>
+          </div>
+          <div class="vehicle">
+            <img src="images/porche.png" alt="porsche-718" />
+          </div>
+          <div class="vechicle-details">
+            <div class="no-passangers">
+              <div class="no-passager-icon">
+                <img src="images/user-02.png" alt="no-passager-icn" />
+              </div>
+              <p class="no-of-passangers">2</p>
+            </div>
+            <div class="car-engine-details">
+              <div class="car-engine-type">
+                <div class="car-engine-type-icon">
+                  <img src="images/gear.png" alt="car-engine-type-icon" />
+                </div>
+                <div class="car-engine-type-select">Manual</div>
+              </div>
+            </div>
+            <div class="car-rent-price-details">
+              <p class="car-rent-price">
+                $405 <span class="car-rent-duration">/d</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="car-list">
+          <div class="car-for-rent">
+            <div class="car-name">
+              Mini Cooper
+              <div class="favourite-car">
+                <img src="images/heart-rounded-unchecked.png" alt="favourite-car-icon" />
+              </div>
+            </div>
+            <div class="vehicle-model">Hatchback</div>
+          </div>
+          <div class="vehicle">
+            <img src="images/mini-cooper.png" alt="mini-cooper" />
+          </div>
+          <div class="vechicle-details">
+            <div class="no-passangers">
+              <div class="no-passager-icon">
+                <img src="images/user-02.png" alt="no-passager-icn" />
+              </div>
+              <p class="no-of-passangers">2</p>
+            </div>
+            <div class="car-engine-details">
+              <div class="car-engine-type">
+                <div class="car-engine-type-icon">
+                  <img src="images/gear.png" alt="car-engine-type-icon" />
+                </div>
+                <div class="car-engine-type-select">Manual</div>
+              </div>
+            </div>
+            <div class="car-rent-price-details">
+              <p class="car-rent-price">
+                $1,205 <span class="car-rent-duration">/d</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="car-list">
+          <div class="car-for-rent">
+            <div class="car-name">
+              Porche 718 Cayman
+              <div class="favourite-car">
+                <img src="images/heart-rounded-unchecked.png" alt="favourite-car-icon" />
+              </div>
+            </div>
+            <div class="vehicle-model">Coupe</div>
+          </div>
+          <div class="vehicle">
+            <img src="images/porche.png" alt="porsche-718" />
+          </div>
+          <div class="vechicle-details">
+            <div class="no-passangers">
+              <div class="no-passager-icon">
+                <img src="images/user-02.png" alt="no-passager-icn" />
+              </div>
+              <p class="no-of-passangers">6</p>
+            </div>
+            <div class="car-engine-details">
+              <div class="car-engine-type">
+                <div class="car-engine-type-icon">
+                  <img src="images/gear.png" alt="car-engine-type-icon" />
+                </div>
+                <div class="car-engine-type-select">Automatic</div>
+              </div>
+            </div>
+            <div class="car-rent-price-details">
+              <p class="car-rent-price">
+                $395 <span class="car-rent-duration">/d</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <section class="right-footer">
+        <div class="footer-logo">TWILIGHT</div>
+        <div class="footer-nav-bar">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+      </section>
+      <section class="left-footer">
+        <div class="copyright">(c) 2021 | Twilight. All right reserved</div>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>
